@@ -1,6 +1,6 @@
 # npmtest-laravel-mix
 
-#### basic test coverage for  [laravel-mix (v0.11.2)](https://github.com/JeffreyWay/laravel-mix#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-laravel-mix.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-laravel-mix) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-laravel-mix.svg)](https://travis-ci.org/npmtest/node-npmtest-laravel-mix)
+#### basic test coverage for  [laravel-mix (v0.11.3)](https://github.com/JeffreyWay/laravel-mix#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-laravel-mix.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-laravel-mix) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-laravel-mix.svg)](https://travis-ci.org/npmtest/node-npmtest-laravel-mix)
 
 #### Laravel Mix is an elegant wrapper around Webpack for the 80% use case.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-laravel-mix/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-laravel-mix/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-laravel-mix/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-laravel-mix/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-laravel-mix/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-laravel-mix/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-laravel-mix/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-laravel-mix/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-laravel-mix/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-laravel-mix/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-laravel-mix/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-laravel-mix/build/coverage.html/index.html)
 
@@ -35,34 +35,12 @@
 ```json
 
 {
-    "name": "laravel-mix",
-    "version": "0.11.2",
-    "description": "Laravel Mix is an elegant wrapper around Webpack for the 80% use case.",
-    "main": "src/index.js",
-    "scripts": {
-        "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-        "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-        "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-        "production": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-        "test": "nyc ava --verbose",
-        "posttest": "nyc report --reporter=html"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/JeffreyWay/laravel-mix.git"
+    "author": {
+        "name": "Jeffrey Way"
     },
     "bugs": {
         "url": "https://github.com/JeffreyWay/laravel-mix/issues"
     },
-    "homepage": "https://github.com/JeffreyWay/laravel-mix#readme",
-    "keywords": [
-        "laravel",
-        "webpack",
-        "laravel elixir",
-        "laravel mix"
-    ],
-    "author": "Jeffrey Way",
-    "license": "MIT",
     "dependencies": {
         "autoprefixer": "^6.7.3",
         "babel-core": "^6.20.0",
@@ -105,14 +83,51 @@
         "webpack-notifier": "^1.4.1",
         "webpack-stats-plugin": "^0.1.4"
     },
+    "description": "Laravel Mix is an elegant wrapper around Webpack for the 80% use case.",
     "devDependencies": {
         "ava": "^0.17.0",
         "nyc": "^10.0.0",
         "sinon": "^1.17.7"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "c3778b1628bc7ccccb9a106875852935a6d52d4d",
+        "tarball": "https://registry.npmjs.org/laravel-mix/-/laravel-mix-0.11.3.tgz"
+    },
     "engines": {
         "node": ">=6.0.0"
-    }
+    },
+    "gitHead": "a7daff4c4d711bd064cd8729ba591c08538707fc",
+    "homepage": "https://github.com/JeffreyWay/laravel-mix#readme",
+    "keywords": [
+        "laravel",
+        "webpack",
+        "laravel elixir",
+        "laravel mix"
+    ],
+    "license": "MIT",
+    "main": "src/index.js",
+    "maintainers": [
+        {
+            "name": "jeffreyway"
+        }
+    ],
+    "name": "laravel-mix",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JeffreyWay/laravel-mix.git"
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+        "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+        "posttest": "nyc report --reporter=html",
+        "production": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+        "test": "nyc ava --verbose",
+        "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules"
+    },
+    "version": "0.11.3",
+    "bin": {}
 }
 ```
 
